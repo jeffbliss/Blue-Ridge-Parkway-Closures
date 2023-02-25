@@ -4,7 +4,9 @@ import {
   FeatureGroup,
   TileLayer,
   GeoJSON,
-  Tooltip
+  Tooltip,
+  Popup,
+  Marker
 } from 'react-leaflet';
 import { geojson } from '../output_geojson';
 
@@ -34,8 +36,7 @@ export default function LeafletMap(props) {
       doubleClickZoom={true}
       scrollWheelZoom={true}
       closePopupOnClick={false}>
-      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
         crossOrigin=""/>
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
