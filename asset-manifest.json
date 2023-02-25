@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Blue-Ridge-Parkway-Closures/static/css/main.073c9b0a.css",
-    "main.js": "/Blue-Ridge-Parkway-Closures/static/js/main.f53da275.js",
+    "main.js": "/Blue-Ridge-Parkway-Closures/static/js/main.52b00c5b.js",
     "static/js/787.1aa19e97.chunk.js": "/Blue-Ridge-Parkway-Closures/static/js/787.1aa19e97.chunk.js",
     "index.html": "/Blue-Ridge-Parkway-Closures/index.html",
     "main.073c9b0a.css.map": "/Blue-Ridge-Parkway-Closures/static/css/main.073c9b0a.css.map",
-    "main.f53da275.js.map": "/Blue-Ridge-Parkway-Closures/static/js/main.f53da275.js.map",
+    "main.52b00c5b.js.map": "/Blue-Ridge-Parkway-Closures/static/js/main.52b00c5b.js.map",
     "787.1aa19e97.chunk.js.map": "/Blue-Ridge-Parkway-Closures/static/js/787.1aa19e97.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.f53da275.js"
+    "static/js/main.52b00c5b.js"
   ]
 }
