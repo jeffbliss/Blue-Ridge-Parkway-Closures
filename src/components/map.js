@@ -15,10 +15,12 @@ export default function LeafletMap(props) {
       height: "100vh" 
     },
     Open: {
-      color: 'green'
+      color: 'green',
+      weight: 6
     },
     Closed: {
-      color: 'red'
+      color: 'red',
+      weight: 6
     }
   }
   const center = [ 35.5951, -82.5515 ] // Asheville, NC
