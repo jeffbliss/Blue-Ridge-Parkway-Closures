@@ -47,7 +47,7 @@ export default function LeafletMap(props) {
             <FeatureGroup>
               {feature.properties.status === 'Closed' &&
                 <GeoJSON style={styles.Closed} data={feature}>
-                  <Tooltip direction="center">
+                  <Tooltip direction="top">
                     <ul>
                       <li>Mileposts: {feature.properties.mileposts}</li>
                       <li>Name: {feature.properties.name}</li>
@@ -59,7 +59,7 @@ export default function LeafletMap(props) {
               }
               {feature.properties.status === 'Open' &&
                 <GeoJSON style={styles.Open} data={feature}>
-                  <Tooltip direction="center">
+                  <Tooltip direction="top">
                     <ul>
                       <li>Mileposts: {feature.properties.mileposts}</li>
                       <li>Name: {feature.properties.name}</li>
@@ -71,7 +71,7 @@ export default function LeafletMap(props) {
               }
               {feature.properties.status === 'Ungated' &&
                 <GeoJSON style={styles.Open} data={feature}>
-                  <Tooltip direction="center">
+                  <Tooltip direction="top">
                     <ul>
                       <li>Mileposts: {feature.properties.mileposts}</li>
                       <li>Name: {feature.properties.name}</li>
