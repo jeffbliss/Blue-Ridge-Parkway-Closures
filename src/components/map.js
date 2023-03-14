@@ -8,12 +8,17 @@ import {
   Popup,
   Marker
 } from 'react-leaflet';
+import { Chip } from '@mui/material';
+import Control from 'react-leaflet-custom-control';
 
 export default function LeafletMap(props) {
   const styles = {
     mapContainer: {
       width: "100%", 
       height: "100vh" 
+    },
+    lastUpdatedChip: {
+      'font-size': '1.5em'
     },
     Open: {
       color: 'green',
@@ -27,6 +32,8 @@ export default function LeafletMap(props) {
   const center = [ 35.5951, -82.5515 ] // Asheville, NC
   const zoom = 10
   const geojson = require('../output.json');
+  const currentDate = new Date().toJSON().slice(0, 10);
+  const lastUpdatedString = 'LAST UPDATED: '.concat(currentDate);
 
   return (
     <MapContainer 
@@ -41,7 +48,14 @@ export default function LeafletMap(props) {
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-      /> 
+      />
+      <Control prepend='true' position='topleft'>
+        <Chip
+          label={lastUpdatedString}
+          color="primary"
+          style={styles.lastUpdatedChip}
+        />
+      </Control>
         {geojson.features.map((feature, index) => {
           return (
             <FeatureGroup>
