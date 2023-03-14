@@ -8,7 +8,6 @@ import {
   Popup,
   Marker
 } from 'react-leaflet';
-import { geojson } from '../output_geojson';
 
 export default function LeafletMap(props) {
   const styles = {
@@ -27,6 +26,7 @@ export default function LeafletMap(props) {
   }
   const center = [ 35.5951, -82.5515 ] // Asheville, NC
   const zoom = 10
+  const geojson = require('../output.json');
 
   return (
     <MapContainer 
