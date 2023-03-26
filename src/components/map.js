@@ -33,7 +33,7 @@ export default function LeafletMap(props) {
   const zoom = 10
   const geojson = require('../output.json');
   const currentDate = new Date().toJSON().slice(0, 10);
-  const lastUpdatedDate = "2023-03-15";
+  const lastUpdatedDate = "2023-03-26";
   // const lastUpdatedString = 'LAST UPDATED: '.concat(currentDate);
   const lastUpdatedString = 'LAST UPDATED: '.concat(lastUpdatedDate);
 
